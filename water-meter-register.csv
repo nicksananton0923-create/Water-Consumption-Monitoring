@@ -1,0 +1,3 @@
+meter_id,area,equipment,meter_type,unit,install_date,manufacturer,model,serial_number,location_code,rollover_limit,calibration_due,status,notes
+MTR-DYE-001,Dyeing Hall,Dyeing Line A,cumulative,m3,2022-03-15,Aquametro,MAG-X2,AM-22-1188,DH-01,999999,2025-03-15,active,example row — replace with your own meter
+MTR-WSH-002,Washing Hall,Washing Machine 3,cumulative,m3,2022-04-10,Krohne,IFM-6080,KH-44-9023,WH-03,999999,2025-04-10,active,example row — replace with your own meter

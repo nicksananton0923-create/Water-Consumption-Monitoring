@@ -1,0 +1,24 @@
+Industrial Water Consumption — Validation Report
+============================================================
+
+Input file:         /home/z/my-project/build/industrial-water-consumption-monitoring/data/sample-water-readings.csv
+Total readings:     2219
+Anomalies flagged:  14
+
+Flag breakdown:
+  DUPLICATE_TIMESTAMP       1
+  MISSING_READINGS          1
+  NEGATIVE_DELTA            3
+  POTENTIAL_ISSUE           9
+
+Note: POTENTIAL_ISSUE flags indicate statistically unusual
+consumption and must be investigated on site before any
+classification (leak, meter fault, operational change).
+They are NOT confirmed leaks.
+
+Outputs written:
+  - /home/z/my-project/build/industrial-water-consumption-monitoring/scripts/output/validated-readings.csv
+  - /home/z/my-project/build/industrial-water-consumption-monitoring/scripts/output/anomalies.csv
+  - /home/z/my-project/build/industrial-water-consumption-monitoring/scripts/output/daily-summary.csv
+  - /home/z/my-project/build/industrial-water-consumption-monitoring/scripts/output/weekly-summary.csv
+  - /home/z/my-project/build/industrial-water-consumption-monitoring/scripts/output/monthly-summary.csv

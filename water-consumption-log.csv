@@ -1,0 +1,3 @@
+reading_id,meter_id,area,equipment,reading_datetime,cumulative_reading,unit,meter_type,recorded_by,notes
+R00001,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-01-01 08:00,124395.1,m3,cumulative,AB,example row — replace with your own reading
+R00002,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-01-02 08:00,124440.65,m3,cumulative,CD,

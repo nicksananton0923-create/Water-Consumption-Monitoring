@@ -1,0 +1,54 @@
+```mermaid
+erDiagram
+  meter_register ||--o{ consumption_log : "1:N by meter_id"
+  consumption_log ||--o| anomaly_log : "1:0..1 by reading_id"
+  consumption_log }o--|| daily_summary : "aggregates into"
+  daily_summary }o--|| monthly_summary : "aggregates into"
+
+  meter_register {
+    varchar meter_id PK
+    varchar area
+    varchar equipment
+    enum meter_type
+    varchar unit
+    date install_date
+    int rollover_limit
+    enum status
+  }
+
+  consumption_log {
+    varchar reading_id PK
+    varchar meter_id FK
+    datetime reading_datetime
+    decimal cumulative_reading
+    varchar unit
+    varchar recorded_by
+    text notes
+  }
+
+  daily_summary {
+    varchar meter_id PK_FK
+    date date PK
+    decimal consumption_m3
+    decimal target_m3
+    decimal variance_m3
+  }
+
+  monthly_summary {
+    varchar meter_id PK_FK
+    char month PK
+    decimal consumption_m3
+    decimal monthly_target_m3
+    decimal variance_pct
+  }
+
+  anomaly_log {
+    varchar reading_id PK_FK
+    varchar meter_id FK
+    enum flag_type
+    datetime flag_date
+    decimal delta_m3
+    enum investigation_status
+    text investigator_notes
+  }
+```

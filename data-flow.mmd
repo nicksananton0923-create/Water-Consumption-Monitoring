@@ -1,0 +1,14 @@
+```mermaid
+flowchart LR
+  A[1. Raw Cumulative<br/>Readings CSV] --> B[2. Validation<br/>schema / dup / gaps]
+  B --> C[3. Delta Calculation<br/>current − previous]
+  C --> D[4. Aggregation<br/>daily / weekly / monthly]
+  D --> E[5. Dashboard<br/>+ Anomaly Flags]
+
+  subgraph G[Data Integrity Guardrails]
+    G1[No invented readings]
+    G2[Anomaly ≠ leak]
+    G3[Anonymize before publishing]
+    G4[Preserve existing files]
+  end
+```

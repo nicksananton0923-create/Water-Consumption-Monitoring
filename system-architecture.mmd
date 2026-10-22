@@ -1,0 +1,42 @@
+```mermaid
+flowchart TB
+  subgraph L1[Layer 1 — Physical Meters]
+    M1[Myeing MTR-DYE-001]
+    M2[Washing MTR-WSH-002]
+    M3[Boiler MTR-BLR-003]
+    M4[Cooling Tower MTR-CTW-004]
+    M5[Process MTR-PRC-005]
+    M6[Domestic MTR-DOM-006]
+  end
+
+  subgraph L2[Layer 2 — Data Acquisition]
+    LOGGER[Data Logger / Gateway<br/>MODBUS RTU / RS-485]
+  end
+
+  subgraph L3[Layer 3 — Storage & Validation]
+    RAW[Raw CSV Log<br/>sample-water-readings.csv]
+    VAL[Validation Pipeline<br/>data_validation.py]
+    OUT[Validated Outputs<br/>CSV summaries + anomaly log]
+  end
+
+  subgraph L4[Layer 4 — Presentation & Reporting]
+    XLSX[Excel Dashboard]
+    PY[Python Dashboard]
+    PBI[Power BI optional]
+  end
+
+  subgraph L5[Layer 5 — Stakeholders]
+    USERS[Plant Engineers / Utilities Manager / Sustainability Team]
+  end
+
+  M1 & M2 & M3 & M4 & M5 & M6 --> LOGGER
+  LOGGER --> RAW
+  RAW --> VAL
+  VAL --> OUT
+  OUT --> XLSX
+  OUT --> PY
+  OUT --> PBI
+  XLSX --> USERS
+  PY --> USERS
+  PBI --> USERS
+```

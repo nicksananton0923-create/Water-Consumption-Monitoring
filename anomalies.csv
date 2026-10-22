@@ -1,0 +1,15 @@
+reading_id,meter_id,area,equipment,reading_datetime,cumulative_reading,unit,meter_type,recorded_by,notes,delta_m3,flag
+R00075,MTR-BLR-003,Boiler House,Steam Boiler 1,2024-03-16 08:00,56967.76,m3,cumulative,AB,gap of 2 day(s) between 2024-03-14 08:00 and 2024-03-16 08:00,,MISSING_READINGS
+R00309,MTR-BLR-003,Boiler House,Steam Boiler 1,2024-11-05 08:00,61377.96,m3,cumulative,IJ,operator reports meter replaced - investigate | reading decreased by 32.45 m3 — investigate meter reset/replacement,-32.45,NEGATIVE_DELTA
+R00310,MTR-BLR-003,Boiler House,Steam Boiler 1,2024-11-06 08:00,61445.67,m3,cumulative,CD,consumption 67.71 m3 is 3.7x the 14-day median (18.48 m3). Investigate before classifying as leak.,67.71,POTENTIAL_ISSUE
+R00588,MTR-CTW-004,Cooling Tower,Cooling Tower Cell 2,2024-08-10 08:00,5.0,m3,cumulative,EF,reading decreased by 81033.57 m3 — investigate meter reset/replacement,-81033.57,NEGATIVE_DELTA
+R01356,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-09-15 00:00,141406.46,m3,cumulative,CD,hourly batch | consumption 4882.57 m3 is 101.1x the 14-day median (48.31 m3). Investigate before classifying as leak.,4882.57,POTENTIAL_ISSUE
+R01380,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-09-16 08:00,136605.34,m3,cumulative,CD,reading decreased by 4845.76 m3 — investigate meter reset/replacement,-4845.76,NEGATIVE_DELTA
+R01381,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-09-17 08:00,136659.68,m3,cumulative,GH,consumption 54.34 m3 is 27.9x the 14-day median (1.95 m3). Investigate before classifying as leak.,54.34,POTENTIAL_ISSUE
+R01382,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-09-18 08:00,136714.31,m3,cumulative,KL,consumption 54.63 m3 is 28.0x the 14-day median (1.95 m3). Investigate before classifying as leak.,54.63,POTENTIAL_ISSUE
+R01383,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-09-19 08:00,136771.74,m3,cumulative,CD,consumption 57.43 m3 is 29.3x the 14-day median (1.96 m3). Investigate before classifying as leak.,57.43,POTENTIAL_ISSUE
+R01384,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-09-20 08:00,136818.82,m3,cumulative,IJ,consumption 47.08 m3 is 22.9x the 14-day median (2.06 m3). Investigate before classifying as leak.,47.08,POTENTIAL_ISSUE
+R01385,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-09-21 08:00,136855.75,m3,cumulative,AB,consumption 36.93 m3 is 17.9x the 14-day median (2.06 m3). Investigate before classifying as leak.,36.93,POTENTIAL_ISSUE
+R01386,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-09-22 08:00,136883.78,m3,cumulative,CD,consumption 28.03 m3 is 12.8x the 14-day median (2.19 m3). Investigate before classifying as leak.,28.03,POTENTIAL_ISSUE
+R01387,MTR-DYE-001,Dyeing Hall,Dyeing Line A,2024-09-23 08:00,136939.57,m3,cumulative,AB,consumption 55.79 m3 is 24.3x the 14-day median (2.30 m3). Investigate before classifying as leak.,55.79,POTENTIAL_ISSUE
+R01984,MTR-WSH-002,Washing Hall,Washing Machine 3,2024-05-10 08:00,91818.49,m3,cumulative,CD,,,DUPLICATE_TIMESTAMP

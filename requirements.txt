@@ -1,0 +1,17 @@
+# Python dependencies for the Industrial Water Consumption Monitoring pipeline.
+# Tested with Python 3.10+ on Linux, macOS, and Windows.
+
+# Core data manipulation
+pandas>=2.0
+numpy>=1.24
+
+# Static dashboard rendering
+matplotlib>=3.7
+
+# Interactive HTML dashboard (optional — only needed for .html output)
+plotly>=5.18
+
+# Excel dashboard generation (only needed when regenerating the .xlsx)
+openpyxl>=3.1
+
+# CLI parsing is via stdlib argparse — no extra dep needed.
